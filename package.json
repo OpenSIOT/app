@@ -1,0 +1,36 @@
+{
+  "name": "openiot_app",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "description": "OpenIOT project manager",
+  "author": "Emmanuel Oppong-Sarpong",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^2.1.14",
+    "vue": "^2.5.17",
+    "vue-material": "^1.0.0-beta-10.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenSIOT/app.git"
+  },
+  "keywords": [
+    "OpenIOT",
+    "vue",
+    "theme",
+    "iot"
+  ],
+  "license": "MIT",
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/OpenSIOT/app"
+  },
+  "homepage": "https://github.com/OpenSIOT/app#readme"
+}
