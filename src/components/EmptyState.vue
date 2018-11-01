@@ -3,7 +3,7 @@
         <v-layout column class="empty-container" align-center justify-center>
             <v-icon :size="160">{{icon}}</v-icon>
             <div class="display-1 pa-2">{{title}}</div>
-            <div class="body-2 pa-3">{{caption}}</div>
+            <div class="body-2 pa-3 text-md-center">{{caption}}</div>
             <slot></slot>
         </v-layout>
     </v-layout>

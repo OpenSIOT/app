@@ -18,7 +18,7 @@
 <script>
 import TitleBar from "../components/TitleBar.vue";
 import EmptyState from '../components/EmptyState';
-import PopupMenu from '../components/PopupMenu';
+import PopupMenu from './PopupMenu';
 
 export default {
   components: {

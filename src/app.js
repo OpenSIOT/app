@@ -4,25 +4,20 @@ import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify)
 
-import App from './views/App'
+import { store } from './store/index';
 
-const store = new Vuex.Store({
-    state: {
-        count: 0
-    },
-    mutations: {
-        increment(state) {
-            state.count++
-        }
-    }
-})
+import App from './views/App'
 
 window.ui = new Vue({
 
     el: "#app",
 
+    store,
+
     components: {
         App
     },
+
+    render: h => h(App)
 
 });
