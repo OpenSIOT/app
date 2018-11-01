@@ -1,13 +1,28 @@
 const Vue = require('vue');
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
-import Light from './components/Light.vue'
+Vue.use(Vuetify)
+
+import App from './views/App'
+
+const store = new Vuex.Store({
+    state: {
+        count: 0
+    },
+    mutations: {
+        increment(state) {
+            state.count++
+        }
+    }
+})
 
 window.ui = new Vue({
 
-    el: "[openiot-app]",
+    el: "#app",
 
     components: {
-        'iot-light': Light
+        App
     },
 
 });
