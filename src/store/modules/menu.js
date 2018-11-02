@@ -20,7 +20,9 @@ const actions = {
 
 // mutations
 const mutations = {
-
+    toggle(state) {
+        state.visible = !state.visible
+    }
 }
 
 export default {

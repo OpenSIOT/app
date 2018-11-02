@@ -1,13 +1,12 @@
 <template>
     <v-list two-line subheader>
-          <v-subheader inset>Folders</v-subheader>
+          <v-subheader inset>General</v-subheader>
 
           <v-list-tile
             v-for="item in items"
             :key="item.title"
             avatar
-            @click=""
-          >
+            @click="">
             <v-list-tile-avatar>
               <v-icon :class="[item.iconClass]">{{ item.icon }}</v-icon>
             </v-list-tile-avatar>
@@ -57,13 +56,13 @@ export default {
     data () {
       return {
         items: [
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos', subtitle: 'Jan 9, 2014' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes', subtitle: 'Jan 17, 2014' },
-          { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work', subtitle: 'Jan 28, 2014' }
+          { icon: 'create_new_folder', iconClass: 'white--text', title: 'New' },
+          { icon: 'folder_open', iconClass: 'white--text', title: 'Open' },
+          { icon: 'save', iconClass: 'white--text', title: 'Work' },
+          { icon: 'import_export', iconClass: 'white--text', title: 'Import / Export' }
         ],
         items2: [
           { icon: 'assignment', iconClass: 'blue white--text', title: 'Vacation itinerary', subtitle: 'Jan 20, 2014' },
-          { icon: 'call_to_action', iconClass: 'amber white--text', title: 'Kitchen remodel', subtitle: 'Jan 10, 2014' }
         ]
       }
     }

@@ -7,7 +7,6 @@
 
         <v-toolbar-items>
             <v-btn flat>File</v-btn>
-            <v-btn flat>Edit</v-btn>
             <v-btn flat>Preferences</v-btn>
             <v-btn flat>Help</v-btn>
             <v-btn flat>Window</v-btn>
